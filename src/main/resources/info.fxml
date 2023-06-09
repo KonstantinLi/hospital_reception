@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.software_engineering_course_work.graphic_interface.PatientController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="360.0" layoutX="14.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="560.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="20.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.7962085308056872" startX="0.7914691943127963" startY="0.2890995260663507">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8156862854957581" green="0.9215686321258545" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7920524477958679" blue="0.7731481194496155" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="imageSex" fitHeight="92.0" fitWidth="105.0" layoutX="30.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="45.0">
+         <image>
+            <Image url="@icons/man.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelName" layoutX="141.0" layoutY="110.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPatient" layoutX="141.0" layoutY="78.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="27.0" layoutX="32.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="93.0" layoutY="10.0" text="Інформація">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="173.0" text="Номер телефону">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="173.0" text="Домашня адреса">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldPhone" alignment="CENTER" editable="false" layoutX="39.0" layoutY="200.0" prefHeight="31.0" prefWidth="211.0" promptText="Номер телефону" AnchorPane.leftAnchor="40.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fieldAddress" editable="false" layoutX="344.0" layoutY="200.0" prefHeight="31.0" prefWidth="211.0" promptText="Домашня адреса" AnchorPane.rightAnchor="55.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="76.0" layoutY="279.0" text="Поштова скринька">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldEmail" editable="false" layoutX="40.0" layoutY="306.0" prefHeight="31.0" prefWidth="211.0" promptText="Поштова скринька" AnchorPane.leftAnchor="40.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="379.0" layoutY="279.0" text="Дата народження">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldBirthday" alignment="CENTER" editable="false" layoutX="349.0" layoutY="306.0" prefHeight="31.0" prefWidth="211.0" promptText="Дата народження" AnchorPane.rightAnchor="55.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="copyPhone" fitHeight="27.0" fitWidth="23.0" layoutX="257.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/copy.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="copyEmail" fitHeight="27.0" fitWidth="23.0" layoutX="257.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/copy.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="copyAddress" fitHeight="27.0" fitWidth="23.0" layoutX="545.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="27.0">
+         <image>
+            <Image url="@icons/copy.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="copyBirthday" fitHeight="27.0" fitWidth="23.0" layoutX="550.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/copy.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="buttonGetData" layoutX="420.0" layoutY="34.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" styleClass="write-button" text="Відобразити дані" />
+   </children>
+</AnchorPane>

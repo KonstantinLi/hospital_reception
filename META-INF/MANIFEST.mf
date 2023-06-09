@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.software_engineering_course_work.graphic_interface.Recep
+ tionApplication
+

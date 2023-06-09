@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.software_engineering_course_work.graphic_interface.AuthController">
+   <children>
+      <AnchorPane prefHeight="148.0" prefWidth="663.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="325.0" layoutY="45.0" prefHeight="52.0" prefWidth="65.0" text="Med" textFill="#ff6f00">
+               <font>
+                  <Font name="Consolas Bold" size="50.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="17.5" offsetX="3.0" offsetY="3.0" radius="10.125" width="25.0">
+                     <color>
+                        <Color red="0.7631579041481018" green="0.7631579041481018" blue="0.7631579041481018" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <ImageView fitHeight="126.0" fitWidth="118.0" layoutX="213.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/medicon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="408.0" layoutY="45.0" prefHeight="52.0" prefWidth="65.0" text="Era" textFill="#575757">
+               <font>
+                  <Font name="Consolas Bold" size="50.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="17.5" offsetX="3.0" offsetY="3.0" radius="10.125" width="25.0">
+                     <color>
+                        <Color red="0.7631579041481018" green="0.7631579041481018" blue="0.7631579041481018" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="148.0" prefHeight="180.0" prefWidth="663.0" style="-fx-background-color: white;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="148.0" layoutX="17.0" layoutY="26.0" stroke="#6773ff" strokeType="INSIDE" width="630.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="33.0" layoutX="36.0" layoutY="11.0" stroke="#6773ff" strokeType="INSIDE" width="246.0" />
+            <Label layoutX="44.0" layoutY="18.0" prefHeight="18.0" prefWidth="234.0" style="-fx-font-weight: bold;" text="Ідентифікація користувача / Пароль">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="57.0" prefHeight="33.0" prefWidth="131.0" style="-fx-font-weight: bold; -fx-background-color: rgb(245, 166, 69); -fx-border-color: grey; -fx-border-width: 1; -fx-background-radius: 5; -fx-border-radius: 5; -fx-alignment: center;" text="Логін" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="109.0" prefHeight="33.0" prefWidth="131.0" style="-fx-font-weight: bold; -fx-background-color: rgb(245, 166, 69); -fx-border-color: grey; -fx-border-width: 1; -fx-background-radius: 5; -fx-border-radius: 5; -fx-alignment: center;" text="Пароль" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="fieldPassword" layoutX="250.0" layoutY="109.0" prefHeight="33.0" prefWidth="272.0" promptText="Password" style="-fx-border-color: grey;" />
+            <TextField fx:id="fieldEmail" layoutX="250.0" layoutY="57.0" prefHeight="33.0" prefWidth="272.0" promptText="Email" style="-fx-border-color: grey;" />
+            <CheckBox fx:id="checkBoxStay" layoutX="459.0" layoutY="142.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="177.0" text="Залишитись у системі" visible="false" />
+            <CheckBox fx:id="checkBoxRemind" layoutX="459.0" layoutY="113.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="177.0" text="Запам'ятати" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="328.0" prefHeight="58.0" prefWidth="663.0" style="-fx-background-color: white;">
+         <children>
+            <ToggleButton fx:id="buttonClose" layoutX="555.0" layoutY="13.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="94.0" style="-fx-background-color: rgb(95, 162, 237);" text="Скасувати">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ToggleButton>
+            <ToggleButton fx:id="buttonAuth" layoutX="448.0" layoutY="13.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="94.0" style="-fx-background-color: rgb(95, 162, 237);" text="Увійти">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ToggleButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

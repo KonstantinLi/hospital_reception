@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <appenders>
+        <File name="UserFile" fileName="logs/user.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %level - %logger{36}: %n%msg%n"/>
+            <Filters>
+                <MarkerFilter marker="USER" />
+            </Filters>
+        </File>
+
+        <File name="AuthFile" fileName="logs/auth.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %level - %logger{36}: %n%msg%n"/>
+            <Filters>
+                <MarkerFilter marker="AUTH" />
+            </Filters>
+        </File>
+
+        <File name="ExceptionsFile" fileName="logs/exceptions.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %level - %logger{36}: %msg%n"/>
+            <Filters>
+                <MarkerFilter marker="EXCEPTIONS" />
+            </Filters>
+        </File>
+    </appenders>
+
+    <loggers>
+        <root level="info">
+            <appender-ref ref="UserFile" />
+            <appender-ref ref="AuthFile" />
+            <appender-ref ref="ExceptionsFile" />
+        </root>
+    </loggers>
+</configuration>
