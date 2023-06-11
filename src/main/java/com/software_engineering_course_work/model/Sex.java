@@ -1,4 +1,4 @@
-package com.software_engineering_course_work;
+package com.software_engineering_course_work.model;
 
 /**
  * Enum that contains two types <strong>MALE</strong> and <strong>FEMALE</strong> of gender.

@@ -1,4 +1,4 @@
-package com.software_engineering_course_work.graphic_interface;
+package com.software_engineering_course_work;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

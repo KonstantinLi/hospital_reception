@@ -14,6 +14,10 @@ module com.software_engineering.course_work.graphic_interface {
 
     opens com.software_engineering_course_work to javafx.fxml;
     exports com.software_engineering_course_work;
-    opens com.software_engineering_course_work.graphic_interface to javafx.fxml;
-    exports com.software_engineering_course_work.graphic_interface;
+    opens com.software_engineering_course_work.controllers to javafx.fxml;
+    exports com.software_engineering_course_work.controllers;
+    exports com.software_engineering_course_work.model;
+    opens com.software_engineering_course_work.model to javafx.fxml;
+    opens com.software_engineering_course_work.database to javafx.fxml;
+    exports com.software_engineering_course_work.database;
 }

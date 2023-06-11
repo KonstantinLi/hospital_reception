@@ -1,7 +1,7 @@
-package com.software_engineering_course_work.graphic_interface;
+package com.software_engineering_course_work.controllers;
 
-import com.software_engineering_course_work.DBConnect;
-import com.software_engineering_course_work.Executor;
+import com.software_engineering_course_work.database.DBConnect;
+import com.software_engineering_course_work.database.Executor;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;

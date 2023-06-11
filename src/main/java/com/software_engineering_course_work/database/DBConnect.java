@@ -1,4 +1,4 @@
-package com.software_engineering_course_work;
+package com.software_engineering_course_work.database;
 import java.sql.*;
 
 /**

@@ -1,10 +1,6 @@
-package com.software_engineering_course_work;
+package com.software_engineering_course_work.database;
 
-import com.software_engineering_course_work.graphic_interface.ReceptionController;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.Marker;
-import org.apache.logging.log4j.MarkerManager;
+import com.software_engineering_course_work.model.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

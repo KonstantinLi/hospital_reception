@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import jfxtras.scene.control.LocalDatePicker?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="671.0" style="-fx-background-color: white;" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.software_engineering_course_work.graphic_interface.RecordController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="671.0" style="-fx-background-color: white;" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.software_engineering_course_work.controllers.RecordController">
    <children>
       <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="275.0" prefWidth="216.0" style="-fx-background-color: #e3faf4;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="10.0">
          <children>

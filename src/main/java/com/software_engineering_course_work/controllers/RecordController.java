@@ -1,6 +1,10 @@
-package com.software_engineering_course_work.graphic_interface;
+package com.software_engineering_course_work.controllers;
 
-import com.software_engineering_course_work.*;
+import com.software_engineering_course_work.database.DBConnect;
+import com.software_engineering_course_work.database.Executor;
+import com.software_engineering_course_work.model.Doctor;
+import com.software_engineering_course_work.model.Patient;
+import com.software_engineering_course_work.model.Specialization;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,7 +23,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.Marker;
 import org.apache.logging.log4j.MarkerManager;
-import org.apache.logging.log4j.core.LogEvent;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -27,7 +30,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 

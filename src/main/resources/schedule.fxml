@@ -23,7 +23,7 @@
 <?import javafx.scene.text.Font?>
 <?import jfxtras.scene.control.LocalDatePicker?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.software_engineering_course_work.graphic_interface.ReceptionController">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.software_engineering_course_work.controllers.ReceptionController">
    <children>
       <HBox layoutY="-2.0" prefHeight="85.0" prefWidth="1280.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>

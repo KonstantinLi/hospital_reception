@@ -1,7 +1,7 @@
-package com.software_engineering_course_work.graphic_interface;
+package com.software_engineering_course_work.controllers;
 
-import com.software_engineering_course_work.Patient;
-import com.software_engineering_course_work.Sex;
+import com.software_engineering_course_work.model.Patient;
+import com.software_engineering_course_work.model.Sex;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;

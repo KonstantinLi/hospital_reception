@@ -1,8 +1,8 @@
-package com.software_engineering_course_work.graphic_interface;
+package com.software_engineering_course_work.controllers;
 
-import com.software_engineering_course_work.DBConnect;
-import com.software_engineering_course_work.Executor;
-import com.software_engineering_course_work.Sex;
+import com.software_engineering_course_work.database.DBConnect;
+import com.software_engineering_course_work.database.Executor;
+import com.software_engineering_course_work.model.Sex;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -15,7 +15,6 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.Marker;
 import org.apache.logging.log4j.MarkerManager;
 
-import java.sql.Date;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.format.DateTimeFormatter;

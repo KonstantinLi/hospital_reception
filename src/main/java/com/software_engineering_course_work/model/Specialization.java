@@ -1,5 +1,6 @@
-package com.software_engineering_course_work;
+package com.software_engineering_course_work.model;
 
+import com.software_engineering_course_work.database.Executor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

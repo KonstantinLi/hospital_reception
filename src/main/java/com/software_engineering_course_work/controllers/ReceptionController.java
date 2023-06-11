@@ -1,6 +1,8 @@
-package com.software_engineering_course_work.graphic_interface;
+package com.software_engineering_course_work.controllers;
 
-import com.software_engineering_course_work.*;
+import com.software_engineering_course_work.database.DBConnect;
+import com.software_engineering_course_work.database.Executor;
+import com.software_engineering_course_work.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -26,7 +28,6 @@ import org.apache.logging.log4j.Marker;
 import org.apache.logging.log4j.MarkerManager;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -37,7 +38,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.TextStyle;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * The controller that implements logic for the main window.

@@ -1,4 +1,4 @@
-package com.software_engineering_course_work;
+package com.software_engineering_course_work.model;
 
 import java.sql.Time;
 

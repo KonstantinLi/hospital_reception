@@ -108,7 +108,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.software_engineering_course_work.graphic_interface.ReceptionApplication</mainClass>
+                            <mainClass>com.software_engineering_course_work.ReceptionApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
